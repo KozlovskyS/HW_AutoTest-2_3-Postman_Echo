@@ -5,7 +5,7 @@ import static org.hamcrest.Matchers.equalTo;
 
 public class PostmanEchoTest {
     @Test
-    public void testRequestDemoLatin (){
+    public void testRequestDemoLatin() {
         // Given - When - Then
 // Предусловия
         given()
@@ -17,12 +17,12 @@ public class PostmanEchoTest {
 // Проверки
                 .then()
                 .statusCode(200)
-                .body("data", equalTo("demo data"))
+                .body("data", equalTo("demo date"))
         ;
     }
 
     @Test
-    public void testRequestDemoCyrillic (){
+    public void testRequestDemoCyrillic() {
         // Given - When - Then
 // Предусловия
         given()
